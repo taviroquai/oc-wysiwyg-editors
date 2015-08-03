@@ -2,6 +2,7 @@
     <textarea name="<?php echo $name ?>" id="<?php echo $this->getId('textarea') ?>"><?= e($value) ?></textarea>
 </div>
         <script>
+    window.CKEDITOR_BASEPATH = '<?php echo url('/plugins/anandpatel/wysiwygeditors/formwidgets/editor/assets/ckeditor'); ?>/';
     $(document).ready( function()
     {
         function ckeditorInit()
